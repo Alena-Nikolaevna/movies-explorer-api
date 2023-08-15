@@ -18,7 +18,8 @@ const app = express();
 const allowedCors = [
   // 'https://mesto-ank.nomoreparties.co',
   // 'http://mesto-ank.nomoreparties.co',
-  // 'http://api.movies-ank.nomoreparties.co',
+  'https://api.movies-ank.nomoreparties.co',
+  'http://api.movies-ank.nomoreparties.co',
   'http://localhost:3000',
 ];
 
