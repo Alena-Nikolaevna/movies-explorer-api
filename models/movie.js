@@ -67,17 +67,5 @@ const movieSchema = new mongoose.Schema({
   },
 });
 
-/* likes: [{ // likes — список лайкнувших пост пользователей
-  type: mongoose.Schema.Types.ObjectId,
-  required: true,
-  ref: 'user',
-  default: [],
-}], */
-/* createdAt: { // createdAt — дата создания
-   type: Date,
-   // required: true,
-   default: Date.now,
- }, */
-
 const Movie = mongoose.model('movie', movieSchema);
 module.exports = Movie;

@@ -16,10 +16,6 @@ const limiter = require('./middlewares/rateLimit');
 const app = express();
 
 const allowedCors = [
-  // 'https://mesto-ank.nomoreparties.co',
-  // 'http://mesto-ank.nomoreparties.co',
-  // 'https://api.movies-ank.nomoreparties.co',
-  // 'http://api.movies-ank.nomoreparties.co',
   'http://localhost:3000',
 ];
 
@@ -51,12 +47,6 @@ app.use(bodyParser.json());
 
 // Логгер запросов нужно подключить до всех обработчиков роутов
 app.use(requestLogger); // подключаем логгер запросов
-
-/* app.get('/crash-test', () => {
-  setTimeout(() => {
-    throw new Error('Сервер сейчас упадёт');
-  }, 0);
-}); */
 
 app.use(router); // обработчик роутов
 

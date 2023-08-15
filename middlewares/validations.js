@@ -25,12 +25,6 @@ const updateUserProfileValidation = celebrate({
   }),
 });
 
-/* const userIdValidation = celebrate({
-  params: Joi.object().keys({
-    userId: Joi.string().required().length(24).hex(),
-  }),
-}); */
-
 // movies:
 const createMovieValidation = celebrate({
   body: Joi.object().keys({
