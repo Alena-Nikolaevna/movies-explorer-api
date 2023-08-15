@@ -13,15 +13,3 @@ movieRouter.get('/', getMovies); // GET /movies — возвращает все 
 movieRouter.delete('/:movieId', movieIdValidation, deleteMovie); // DELETE /movies/_id — удаляет сохранённый фильм по id
 
 module.exports = movieRouter;
-
-//
-// # возвращает все сохранённые текущим пользователем фильмы
-// GET /movies
-
-// # создаёт фильм с переданными в теле
-// country, director, duration, year, description, image,
-// trailer, nameRU, nameEN и thumbnail, movieId
-// POST /movies
-
-// # удаляет сохранённый фильм по id
-// DELETE /movies/_id

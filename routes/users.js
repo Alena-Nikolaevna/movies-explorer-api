@@ -16,10 +16,3 @@ userRouter.patch('/me', updateUserProfileValidation, updateUserProfile); // PATC
 // PATCH /users/me/avatar — обновляет аватар
 
 module.exports = userRouter;
-
-//
-// # возвращает информацию о пользователе (email и имя)
-// GET /users/me
-
-// # обновляет информацию о пользователе (email и имя)
-// PATCH /users/me
