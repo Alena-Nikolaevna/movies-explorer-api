@@ -16,8 +16,6 @@ const limiter = require('./middlewares/rateLimit');
 const app = express();
 
 const allowedCors = [
-  'https://movies-ank.nomoreparties.co',
-  'http://movies-ank.nomoreparties.co',
   'http://localhost:3000',
 ];
 
